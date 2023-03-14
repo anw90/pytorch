@@ -57,6 +57,7 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
 endif()
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+add_definitions(-D_GLIBCXX_USE_CXX11_ABI=0)
 
 # One variable that determines whether the current cmake process is being run
 # with the main Caffe2 library. This is useful for building modules - if
